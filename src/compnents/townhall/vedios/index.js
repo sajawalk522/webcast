@@ -9,7 +9,7 @@ class videoContent extends Component{
                <div className="video-content">
                     <div className="vedio-header">
                         <h1>Administration</h1>
-                        <h2>Media Library</h2>
+                        <h2>Webcast Details</h2>
                     </div>
                     <div className="card-container">
                             <div className="header-text">
