@@ -1,7 +1,10 @@
 import React , {Component} from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Townhall from "../../townhall";
 class sideBar extends Component{
     render(){
         return(
+            
             <div>
                 
                <div className="primary-container">
@@ -23,13 +26,19 @@ class sideBar extends Component{
                   </div>
                         <div className="list-option">
                            <ul>
-                               <li><img src={require('../../../assets/images/dashboard.png')} alt=""/> <span>Dashboard</span></li>
-                               <li className="active"><img src={require('../../../assets/images/schedule.png')} alt=""/> <span>Schedule Webcast</span></li>
-                               <li><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></li>
+                               <li><Link to={'/'}><img src={require('../../../assets/images/dashboard.png')} alt=""/> <span>Dashboard</span></Link></li>
+                               <li className="active"><Link to={'/schedule'}><img src={require('../../../assets/images/schedule.png')} alt=""/> <span>Schedule Webcast</span></Link></li>
+                               <li><Link to={'/manage'}><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></Link></li>
                            </ul>
                        </div>
                </div>
             </div>
+            <Switch>
+              <Route exact path='/' component={Townhall} />
+              <Route path='/contact' component={''} />
+              <Route path='/about' component={''} />
+          </Switch>
+            </Router>
             )
     }
 }
