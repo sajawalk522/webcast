@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Townhall from "../../townhall";
+import { Route, Link } from "react-router-dom";
+import Vedio from '../vedios';
+
 class sideBar extends Component{
     render(){
         return(
@@ -30,10 +31,12 @@ class sideBar extends Component{
                                <li className="active"><Link to={'/schedule'}><img src={require('../../../assets/images/schedule.png')} alt=""/> <span>Schedule Webcast</span></Link></li>
                                <li><Link to={'/manage'}><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></Link></li>
                            </ul>
+                          
                        </div>
+                    
                </div>
             </div>
-           
+        )
     }
 }
 export default sideBar;
