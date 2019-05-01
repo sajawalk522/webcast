@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 
-import { Link } from "react-router-dom";
-// import Vedio from '../vedios';
+import { NavLink } from "react-router-dom";
+
 class sideBar extends Component{
     render(){
         return(
@@ -9,11 +9,14 @@ class sideBar extends Component{
             <div>
                 
                <div className="primary-container">
+                    <NavLink to={'/'}>
                       <div className="back-btn">
+                     
                           <div className="back-button">
-                              <img src={require('../../../assets/images/arrow-left.svg')} alt=""/>
+                           <img src={require('../../../assets/images/arrow-left.svg')} alt=""/>
                           </div>
                       </div>
+                    </NavLink>
                   <div className="logo-wrapper">
                        <div className="logo-img">
                            <div className="logo-wrp">
@@ -27,9 +30,9 @@ class sideBar extends Component{
                   </div>
                         <div className="list-option">
                            <ul>
-                               <li><Link to={'/'}><img src={require('../../../assets/images/dashboard.png')} alt=""/> <span>Dashboard</span></Link></li>
-                               <li className="active"><Link to={'/schedule'}><img src={require('../../../assets/images/schedule.png')} alt=""/> <span>Schedule Webcast</span></Link></li>
-                               <li><Link to={'/manage'}><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></Link></li>
+                               <li><NavLink activeClassName="active" to={'/'}><img src={require('../../../assets/images/dashboard.png')} alt=""/> <span>Dashboard</span></NavLink></li>
+                               <li><NavLink activeClassName="active" to={'/webcastdetail'}><img src={require('../../../assets/images/schedule.png')} alt=""/> <span>Schedule Webcast</span></NavLink></li>
+                               <li><NavLink activeClassName="active" to={'/vedios'}><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></NavLink></li>
                            </ul>
                           
                        </div>

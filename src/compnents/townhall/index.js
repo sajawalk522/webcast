@@ -3,6 +3,8 @@ import Sidebar from '../../compnents/townhall/sidebar';
 import webcastContent from '../../compnents/townhall/webcast';
 import Header from '../../compnents/commoncomponent/header';
 import audio from '../../compnents/audio';
+import Dashboard from '../dashboard';
+import Webcast from '../../compnents/townhall/webcast';
 import { Route } from "react-router-dom";
 
 class townHall extends Component{
@@ -29,8 +31,9 @@ class townHall extends Component{
                          </div>
                         <div className="col-9 ">
                               <Header/>
-                              <Route exact path="/" component={webcastContent} />
-                              <Route exact path="/schedule" component={audio} />
+                              <Route exact path="/" component={Dashboard} />
+                              <Route exact path="/webcastdetail" component={Webcast} />
+                             
                         </div>
                     </div>
                 </div>

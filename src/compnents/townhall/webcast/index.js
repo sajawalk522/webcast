@@ -2,15 +2,53 @@ import React , {Component} from 'react';
 // import Music from '../../audio';
  
 class videoContent extends Component{
-   
+   state = {
+       webcastdata: true,
+       vedioData: false,
+       audioData: false,
+       thumbnail: false,
+   }
+   dataChange(ev){
+    switch(ev) {
+        case 'vedio':
+            this.setState({
+                webcastdata: false,
+                vedioData: true,
+                audioData: false,
+                thumbnail: false,
+            })
+          break;
+        case 'audio':
+        this.setState({
+            webcastdata: false,
+            vedioData: false,
+            audioData: true,
+            thumbnail: false,
+        })
+          break;
+          case 'thumbnail':
+        this.setState({
+            webcastdata: false,
+            vedioData: false,
+            audioData: false,
+            thumbnail: true,
+        })
+          break;
+        default:
+          // code block
+      }
+   }
     render(){
         return(
             <div>
+               
                <div className="video-content">
-                    <div className="vedio-header">
+                   <div className="vedio-header">
                         <h1>Administration</h1>
-                        <h2>Webcast Details</h2>
+                        <h2>{this.state.webcastdata ? "Webcast Details" : "Media Library" }</h2>
                     </div>
+                    { this.state.webcastdata &&
+                    <div>
                     <div className="card-container">
                             <div className="header-text">
                                 <h2>Card title</h2>
@@ -96,19 +134,19 @@ class videoContent extends Component{
                                 <div className="col-sm-4">
                                   <div className="input-container link-input">
                                      <label>Video Path</label>
-                                     <input type="False" placeholder="upload/video/1.mp4"/>
+                                     <button className="btn input" onClick={() => this.dataChange('vedio')}>upload/video/1.mp4</button>
                                   </div>
                                   </div>
                                   <div className="col-sm-4">
                                   <div className="input-container link-input">
                                      <label>Audio Path</label>
-                                     <input type="text" placeholder="upload/audio/1.mp3"/>
+                                     <button className="btn input" onClick={() => this.dataChange('audio')}>upload/video/1.mp4</button>
                                   </div>
                                 </div>
                                 <div className="col-sm-4">
                                     <div className="input-container link-input">
                                         <label>Thumbnail Path</label>
-                                        <input type="text" placeholder="upload/thumbnail/1.png"/>
+                                        <button className="btn input" onClick={() => this.dataChange('thumbnail')}>upload/video/1.mp4</button>
                                     </div>
                                     
                                     </div>
@@ -143,10 +181,37 @@ class videoContent extends Component{
                             </div>
                             <button className="btn report-btn">Generate Report</button>
                         </div>
-                       
+                        </div>
+                    }    
+                     { this.state.vedioData &&
+                                    <div>
+                                        <div className="video-primary w-container ex-vedio">
+                                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9xwazD5SyVg" ></iframe>
+                                        </div>
+                                    </div>
+                      }
+                      { this.state.audioData &&
+                      <div className="audio">   
+                        <audio controls preload="metadata">
+                            <source src="../../assets/images/horse.ogg" type="audio/ogg"/>
+                            <source src="horse.mp3" type="audio/mpeg"/>
+                        </audio>
+                      </div>
+
+                      }
+                      {
+                          this.state.thumbnail && 
+                          <div className="video-thumbnail">
+                             <div className="row">
+                             <div className="col-sm-6">
+                                        <div className="video-primary thumnail-image">
+                                           <img src={require('../../../assets/images/thumnail.png')}/>
+                                        </div>
+                                    </div>
+                             </div>
+                          </div>
+                      }
                 </div>
-                        
-                        
             </div>
            
             )
