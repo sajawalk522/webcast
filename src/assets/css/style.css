@@ -549,3 +549,23 @@
             right: -66px;
         }
       }
+      .cards{
+        /* width: 400px; */
+        height: 150px;
+        border: 1px solid#ececec;
+        box-shadow: 0px 0px 0px 2px #f7f7f7;
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .cards h5{
+        color: #BACC35;
+        font-size: 40px;
+      }
+      .cards p{
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+      }

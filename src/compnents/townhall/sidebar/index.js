@@ -1,10 +1,9 @@
 import React , {Component} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Townhall from "../../townhall";
 class sideBar extends Component{
     render(){
         return(
-            
+           
             <div>
                 
                <div className="primary-container">
@@ -31,9 +30,11 @@ class sideBar extends Component{
                                <li><Link to={'/manage'}><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></Link></li>
                            </ul>
                        </div>
+                      
                </div>
             </div>
-           
+         
+            )
     }
 }
 export default sideBar;

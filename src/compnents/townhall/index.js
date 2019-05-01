@@ -3,6 +3,7 @@ import Sidebar from '../../compnents/townhall/sidebar';
 import VideoContent from '../../compnents/townhall/vedios';
 import Header from '../../compnents/commoncomponent/header';
 
+
 class townHall extends Component{
   state={
       show: false
@@ -28,6 +29,7 @@ class townHall extends Component{
                         <div className="col-9 ">
                               <Header/>
                              <VideoContent/>
+                           
                         </div>
                     </div>
                 </div>
