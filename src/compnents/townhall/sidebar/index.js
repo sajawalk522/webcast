@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 
-import { Route, Link } from "react-router-dom";
-import Vedio from '../vedios';
+import { Link } from "react-router-dom";
+// import Vedio from '../vedios';
 class sideBar extends Component{
     render(){
         return(
