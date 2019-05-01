@@ -199,7 +199,7 @@ class videoContent extends Component{
                      { this.state.vedioData &&
                                     <div>
                                         <div className="video-primary w-container ex-vedio">
-                                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9xwazD5SyVg" ></iframe>
+                                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9xwazD5SyVg" />
                                         </div>
                                     </div>
                       }
@@ -218,7 +218,7 @@ class videoContent extends Component{
                              <div className="row">
                              <div className="col-sm-6">
                                         <div className="video-primary thumnail-image">
-                                           <img src={require('../../../assets/images/thumnail.png')}/>
+                                           <img src={require('../../../assets/images/thumnail.png')} alt=""/>
                                         </div>
                                     </div>
                              </div>
