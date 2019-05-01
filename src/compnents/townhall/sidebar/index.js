@@ -33,13 +33,7 @@ class sideBar extends Component{
                        </div>
                </div>
             </div>
-            <Switch>
-              <Route exact path='/' component={Townhall} />
-              <Route path='/contact' component={''} />
-              <Route path='/about' component={''} />
-          </Switch>
-            </Router>
-            )
+           
     }
 }
 export default sideBar;
