@@ -101,6 +101,7 @@
       }
       .bars-container i{
           font-size: 24px;
+          color: #fff;
       }
       .search-mob{
         display: none;
@@ -777,6 +778,6 @@
       }
       .cards p{
         color: #000;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
       }
