@@ -47,6 +47,9 @@
     color:#fff;
     margin-left:10px;
 }
+.list-option ul li a:hover{
+    text-decoration: none;
+}
 .list-option ul .active:after {
     content: "";
     position: absolute;

@@ -1,8 +1,9 @@
 import React , {Component} from 'react';
 import Sidebar from '../../compnents/townhall/sidebar';
-import VideoContent from '../../compnents/townhall/vedios';
+import webcastContent from '../../compnents/townhall/webcast';
 import Header from '../../compnents/commoncomponent/header';
-
+import audio from '../../compnents/audio';
+import { Route } from "react-router-dom";
 
 class townHall extends Component{
   state={
@@ -28,8 +29,8 @@ class townHall extends Component{
                          </div>
                         <div className="col-9 ">
                               <Header/>
-                             <VideoContent/>
-                           
+                              <Route exact path="/" component={webcastContent} />
+                              <Route exact path="/schedule" component={audio} />
                         </div>
                     </div>
                 </div>
