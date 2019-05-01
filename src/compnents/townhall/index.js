@@ -24,11 +24,18 @@ class townHall extends Component{
                            <Sidebar/>
 
                         </div>
-                        <div className="bars-container" onClick={() => this.open()}>
-                         <i className="fa fa-bars"></i>
-                         </div>
+                        
                         <div className="col-9 ">
+                              <div className="header-secction">
+                                <div className="bars-container" onClick={() => this.open()}>
+                                    <i className="fa fa-bars"></i>
+                                </div>
                               <Header/>
+                              </div>
+                              <div className="search-container search-mob">
+                                    <img src={require("../../assets/images/search.svg")} alt=""/>
+                                     <input type="text" />
+                                </div>
                               <Route exact path="/" component={webcastContent} />
                               <Route exact path="/schedule" component={audio} />
                         </div>

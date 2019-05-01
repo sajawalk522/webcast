@@ -16,7 +16,7 @@ class videoContent extends Component{
                                 <h2>Card title</h2>
                             </div>
                             <div className="row">
-                                <div className="col-sm-4">
+                                <div className="col-md-6 col-sm-4 col-lg-4">
                                   <div className="input-container">
                                      <label>Title</label>
                                      <input type="text" placeholder="title"/>
@@ -26,7 +26,7 @@ class videoContent extends Component{
                                      <input type="date" placeholder="16/8/2019"/>
                                   </div>
                                 </div>
-                                <div className="col-sm-4">
+                                <div className="col-md-6 col-sm-4 col-lg-4">
                                     <div className="input-container">
                                         <label>Host</label>
                                         <input type="text" placeholder="Host"/>
@@ -36,7 +36,7 @@ class videoContent extends Component{
                                         <input type="date" placeholder="16/8/2019"/>
                                     </div>
                                     </div>
-                                <div className="col-sm-4">
+                                <div className="col-md-6 col-sm-4 col-lg-4">
                                     <div className="input-container">
                                             <label>Description</label>
                                             <input type="text" placeholder="Description"/>
@@ -54,26 +54,26 @@ class videoContent extends Component{
                                 <h2>Card title</h2>
                             </div>
                             <div className="row">
-                                <div className="col-sm-4">
+                                <div className="col-md-6 col-sm-4 col-lg-4">
                                   <div className="input-container">
                                      <label>Restricted</label>
                                      <input type="False" placeholder="title"/>
                                   </div>
                                   </div>
-                                  <div className="col-sm-4">
+                                  <div className="col-md-6 col-sm-4 col-lg-4">
                                   <div className="input-container">
                                      <label>Access Token</label>
                                      <input type="text" placeholder="16/8/2019"/>
                                   </div>
                                 </div>
-                                <div className="col-sm-4">
+                                <div className="col-md-6 col-sm-4 col-lg-4">
                                     <div className="input-container">
                                         <label>Moderator Access Token</label>
                                         <input type="text" placeholder="Host"/>
                                     </div>
                                     
                                     </div>
-                                <div className="col-sm-4">
+                                <div className="col-md-6 col-sm-4 col-lg-4">
                                     <div className="input-container">
                                             <label>Parent Access Token</label>
                                             <input type="text" placeholder="Description"/>
@@ -93,26 +93,26 @@ class videoContent extends Component{
                                 <h2>Card title</h2>
                             </div>
                             <div className="row">
-                                <div className="col-sm-4">
+                                <div className="col-sm-4 col-sm-6">
                                   <div className="input-container link-input">
                                      <label>Video Path</label>
                                      <input type="False" placeholder="upload/video/1.mp4"/>
                                   </div>
                                   </div>
-                                  <div className="col-sm-4">
+                                  <div className="col-sm-4 col-sm-6">
                                   <div className="input-container link-input">
                                      <label>Audio Path</label>
                                      <input type="text" placeholder="upload/audio/1.mp3"/>
                                   </div>
                                 </div>
-                                <div className="col-sm-4">
+                                <div className="col-sm-4 col-sm-6">
                                     <div className="input-container link-input">
                                         <label>Thumbnail Path</label>
                                         <input type="text" placeholder="upload/thumbnail/1.png"/>
                                     </div>
                                     
                                     </div>
-                                <div className="col-sm-4">
+                                <div className="col-sm-4 col-sm-6">
                                     <div className="input-container link-input">
                                             <label>Listed</label>
                                             <input type="text" placeholder="True"/>
@@ -141,7 +141,20 @@ class videoContent extends Component{
                                      <li><span>Jhon Doe</span><span>Lorem Ipsum dolar?</span><span className="approved">Approved</span><span>16/18/2019</span></li>
                                  </ul>
                             </div>
-                            <button className="btn report-btn">Generate Report</button>
+                            <div className="responsive-list">
+                                <ul>
+                                     <li><span>Name</span><span>Jhon Doe</span></li>
+                                     <li><span>Date Created</span><span>16/08/2019</span></li>
+                                     <li><span>Status</span><span className="approved">Approved</span></li>
+                                     <li><span>Question</span><span>Lorem Ipsum dolar?</span></li>
+                                     
+                                 </ul>
+
+                            </div>
+                            <div className="generate-btn">
+                               <button className="btn report-btn">Generate Report</button>
+                            </div>
+                           
                         </div>
                        
                 </div>

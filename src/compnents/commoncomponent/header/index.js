@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import Sidebar from '../../townhall/sidebar';
 
 class Header extends React.Component {
 constructor(){
@@ -7,12 +7,14 @@ constructor(){
 
  this.state = {
        displayMenu: false,
+      
      };
 
   this.showDropdownMenu = this.showDropdownMenu.bind(this);
   this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
 
 };
+
 
 showDropdownMenu(event) {
     event.preventDefault();

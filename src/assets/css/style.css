@@ -31,7 +31,7 @@
         
       }
      
-      .header .search-container input{
+     .search-container input{
         width: 700px;
         border-radius: 50px;
         outline: none;
@@ -42,7 +42,7 @@
         position: relative;
         padding-left:48px;
       }
-      .header .search-container img{
+       .search-container img{
         position: absolute;
         top: 42px;
         left: 88px;
@@ -102,7 +102,26 @@
       .bars-container i{
           font-size: 24px;
       }
-
+      .search-mob{
+        display: none;
+      }
+     .responsive-list{
+       width: 325px;
+       border: 1px solid #ececec;
+       padding: 20px;
+       display: none;
+       margin-top: 20px;
+     }
+     .responsive-list ul{
+       list-style: none;
+       padding-left: 0px;
+     }
+     .responsive-list ul li{
+       margin: 10px;
+       display: flex;
+       justify-content: space-between;
+   
+     }
       @media (max-width: 479px) and (min-width: 320px) {
          
           .main-container{
@@ -141,22 +160,25 @@
         .bars-container{
             display: block;
            z-index: 1;
+           height: 30px;
           }
           .sidearea{
               flex-flow: nowrap;
               overflow: hidden;
           }
           .header{
-            max-width: 250px;
+            max-width: 124px;
             padding: 20px;
           }
-          .header .search-container input{
-            width: 130px;
-            padding: 3px 3px 3px 30px;
+          .search-container input{
+            width: 263px;
+            padding: 4px 3px 4px 30px;
           }
-          .header .search-container img{
-              left: 45px;
-              width: 20px;
+        
+          .search-container img{
+            left: 20px;
+            width: 20px;
+            top: 8px;
           }
           .dropdown-list ul{
             width: 120px;
@@ -169,6 +191,7 @@
           }
           .video-content{
               padding: 0px;
+              padding-left: 30px;
           }
           .w-container{
               width: 100%;
@@ -176,6 +199,49 @@
           }
           .flex-adio{
               width: 100%;
+          }
+          .header-secction{
+            min-width: 374px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #BACC35;
+          }
+          .col-9 {
+            padding: 0px;
+          }
+          .search-container{
+           display: none;
+          }
+          .search-mob{
+            display: block;
+            position: relative;
+            margin: 30px 49px;
+          }
+          .search-area{
+           display: none;
+          }
+          .responsive-list{
+            display: block;
+          }
+          .list-below{
+            display: none;
+          }
+          .generate-btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+          .back-btn .back-button{
+            right: -67px;
+            top: 107px;
+            width: 50px;
+            height: 50px
+          }
+          .list-option ul li span{
+            font-size: 14px;
+          }
+          .btn-webcast button{
+            margin: 10px 20px;
           }
       }
       @media (max-width: 991px) and (min-width: 768px) {
@@ -220,14 +286,14 @@
             overflow: hidden;
         }
         .header{
-            max-width: 100%;
+          max-width: 124px;
           padding: 20px;
         }
-        .header .search-container input{
+         .search-container input{
             width: 360px;
           padding: 3px 3px 3px 30px;
         }
-        .header .search-container img{
+         .search-container img{
             left: 45px;
             width: 20px;
         }
@@ -242,6 +308,7 @@
         }
         .video-content{
             padding: 0px;
+            padding-left: 30px;
         }
         .w-container{
             width: 100%;
@@ -250,6 +317,42 @@
         .flex-adio{
             width: 100%;
         }
+        .flex-adio{
+          width: 100%;
+      }
+      .header-secction{
+        min-width: 374px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #BACC35;
+        width: 767px;
+      }
+      .col-9 {
+        padding: 0px;
+      }
+      .search-container{
+       display: none;
+      }
+      .search-mob{
+        display: block;
+        position: relative;
+        margin: 30px 39px;
+      }
+      .search-area{
+       display: none;
+      }
+      .responsive-list{
+        width: 500px;
+        display: block;
+      }
+      .list-below{
+        display: none;
+      }
+      .generate-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       } 
       @media (max-width: 567px) and (min-width: 480px) {
         .main-container{
@@ -277,14 +380,15 @@
             overflow: hidden;
         }
         .header{
-            max-width: 100%;
+          max-width: 124px;
           padding: 20px;
         }
-        .header .search-container input{
+        .search-container input{
             width: 360px;
           padding: 3px 3px 3px 30px;
         }
-        .header .search-container img{
+        
+      .search-container img{
             left: 45px;
             width: 20px;
         }
@@ -307,6 +411,41 @@
         .flex-adio{
             width: 100%;
         }
+        .flex-adio{
+          width: 100%;
+      }
+      .header-secction{
+        min-width: 374px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #BACC35;
+        width: 700px;
+      }
+      .col-9 {
+        padding: 0px;
+      }
+      .search-container{
+       display: none;
+      }
+      .search-mob{
+        display: block;
+        position: relative;
+        margin: 30px 39px;
+      }
+      .search-area{
+       display: none;
+      }
+      .responsive-list{
+        display: block;
+      }
+      .list-below{
+        display: none;
+      }
+      .generate-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       }
       @media (max-width: 684px) and (min-width: 568px) {
         .main-container{
@@ -350,14 +489,14 @@
             overflow: hidden;
         }
         .header{
-            max-width: 100%;
+          max-width: 124px;
           padding: 20px;
         }
-        .header .search-container input{
+       .search-container input{
             width: 360px;
           padding: 3px 3px 3px 30px;
         }
-        .header .search-container img{
+        .search-container img{
             left: 45px;
             width: 20px;
         }
@@ -380,6 +519,41 @@
         .flex-adio{
             width: 100%;
         }
+        .flex-adio{
+          width: 100%;
+      }
+      .header-secction{
+        min-width: 374px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #BACC35;
+        width: 670px;
+      }
+      .col-9 {
+        padding: 0px;
+      }
+      .search-container{
+       display: none;
+      }
+      .search-mob{
+        display: block;
+        position: relative;
+        margin: 30px 39px;
+      }
+      .search-area{
+       display: none;
+      }
+      .responsive-list{
+        display: block;
+      }
+      .list-below{
+        display: none;
+      }
+      .generate-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       }
       @media (max-width: 767px) and (min-width: 685px)  {
         .main-container{
@@ -423,14 +597,14 @@
             overflow: hidden;
         }
         .header{
-            max-width: 100%;
+          max-width: 124px;
           padding: 20px;
         }
-        .header .search-container input{
+       .search-container input{
             width: 360px;
           padding: 3px 3px 3px 30px;
         }
-        .header .search-container img{
+        .search-container img{
             left: 45px;
             width: 20px;
         }
@@ -453,8 +627,43 @@
         .flex-adio{
             width: 100%;
         }
+        .flex-adio{
+          width: 100%;
       }
-      @media (max-width: 991px) and (min-width: 768px) {
+      .header-secction{
+        min-width: 374px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #BACC35;
+        width: 720px;
+      }
+      .col-9 {
+        padding: 0px;
+      }
+      .search-container{
+       display: none;
+      }
+      .search-mob{
+        display: block;
+        position: relative;
+        margin: 30px 39px;
+      }
+      .search-area{
+       display: none;
+      }
+      .responsive-list{
+        display: block;
+      }
+      .list-below{
+        display: none;
+      }
+      .generate-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      }
+      @media (max-width: 1024px) and (min-width: 768px) {
         .main-container{
             display: flex;
         }
@@ -496,16 +705,17 @@
             overflow: hidden;
         }
         .header{
-            max-width: 100%;
+          max-width: 124px;
           padding: 20px;
         }
-        .header .search-container input{
-            width: 360px;
-          padding: 3px 3px 3px 30px;
+       .search-container input{
+            width: 100%;
+          padding: 7px 3px 7px 30px;
         }
-        .header .search-container img{
-            left: 45px;
-            width: 20px;
+       .search-container img{
+        left: 20px;
+        width: 20px;
+        top: 10px;
         }
         .dropdown-list ul{
           width: 120px;
@@ -518,6 +728,7 @@
         }
         .video-content{
             padding: 0px;
+            padding-left: 30px;
         }
         .w-container{
             width: 100%;
@@ -533,11 +744,11 @@
             padding: 20px;
             justify-content: space-around;
         }
-        .header .search-container input{
+        .search-container input{
             width: 500px;
           padding: 3px 3px 3px 30px;
         }
-        .header .search-container img{
+       .search-container img{
             left: 45px;
             width: 20px;
         }
