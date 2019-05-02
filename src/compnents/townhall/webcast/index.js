@@ -95,26 +95,26 @@ class videoContent extends Component{
                                 <div className="col-md-6 col-sm-4 col-lg-4">
                                   <div className="input-container">
                                      <label>Restricted</label>
-                                     <input type="False" placeholder="title"/>
+                                     <input type="False" placeholder="False"/>
                                   </div>
                                   </div>
                                   <div className="col-md-6 col-sm-4 col-lg-4">
                                   <div className="input-container">
                                      <label>Access Token</label>
-                                     <input type="text" placeholder="16/8/2019"/>
+                                     <input type="text" placeholder="DFE5210HH5"/>
                                   </div>
                                 </div>
                                 <div className="col-md-6 col-sm-4 col-lg-4">
                                     <div className="input-container">
                                         <label>Moderator Access Token</label>
-                                        <input type="text" placeholder="Host"/>
+                                        <input type="text" placeholder="DFE5210HH5"/>
                                     </div>
                                     
                                     </div>
                                 <div className="col-md-6 col-sm-4 col-lg-4">
                                     <div className="input-container">
                                             <label>Parent Access Token</label>
-                                            <input type="text" placeholder="Description"/>
+                                            <input type="text" placeholder="DFE5210HH5"/>
                                         </div> 
                                        
                                     </div>

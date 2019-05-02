@@ -39,9 +39,9 @@ class townHall extends Component{
                                      <input type="text" />
                                 </div>
                               {/* <Route exact path="/" component={webcastContent} /> */}
-                              <Route exact path="/schedule" component={audio} />
-                              <Route exact path="/" component={Dashboard} />
-                              <Route exact path="/webcastdetail" component={Webcast} />
+                              <Route exact path="/dashboard" component={Dashboard} />
+                              <Route path="/schedule" component={audio} /> 
+                              <Route path="/webcastdetail" component={Webcast} />
                              
                         </div>
                     </div>

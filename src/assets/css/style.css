@@ -205,7 +205,7 @@
             min-width: 374px;
             display: flex;
             justify-content: space-between;
-            background-color: #BACC35;
+            background-color: #98CE00;
           }
           .col-9 {
             padding: 0px;
@@ -234,7 +234,7 @@
           }
           .back-btn .back-button{
             right: -67px;
-            top: 180px;
+            top: 135px;
             width: 50px;
             height: 50px
           }
@@ -325,7 +325,7 @@
         min-width: 374px;
         display: flex;
         justify-content: space-between;
-        background-color: #BACC35;
+        background-color: #98CE00;
         width: 767px;
       }
       .col-9 {
@@ -419,7 +419,7 @@
         min-width: 374px;
         display: flex;
         justify-content: space-between;
-        background-color: #BACC35;
+        background-color: #98CE00;
         width: 700px;
       }
       .col-9 {
@@ -527,7 +527,7 @@
         min-width: 374px;
         display: flex;
         justify-content: space-between;
-        background-color: #BACC35;
+        background-color: #98CE00;
         width: 670px;
       }
       .col-9 {
@@ -635,7 +635,7 @@
         min-width: 374px;
         display: flex;
         justify-content: space-between;
-        background-color: #BACC35;
+        background-color: #98CE00;
         width: 720px;
       }
       .col-9 {
@@ -773,7 +773,7 @@
         align-items: center;
       }
       .cards h5{
-        color: #BACC35;
+        color: #98CE00;
         font-size: 40px;
       }
       .cards p{

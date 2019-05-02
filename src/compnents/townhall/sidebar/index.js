@@ -30,7 +30,7 @@ class sideBar extends Component{
                   </div>
                         <div className="list-option">
                            <ul>
-                               <li><NavLink activeClassName="active" to={'/'}><img src={require('../../../assets/images/dashboard.png')} alt=""/> <span>Dashboard</span></NavLink></li>
+                               <li><NavLink activeClassName="active" to={'/dashboard'}><img src={require('../../../assets/images/dashboard.png')} alt=""/> <span>Dashboard</span></NavLink></li>
                                <li><NavLink activeClassName="active" to={'/webcastdetail'}><img src={require('../../../assets/images/schedule.png')} alt=""/> <span>Schedule Webcast</span></NavLink></li>
                                <li><NavLink activeClassName="active" to={'/vedios'}><img src={require('../../../assets/images/manage.png')} alt=""/> <span>Manage Webcast</span></NavLink></li>
                            </ul>
