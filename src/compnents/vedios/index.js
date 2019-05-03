@@ -59,7 +59,7 @@ class videoContent extends Component{
                                     this.state.video.map((videokey , index) => 
                                     <div className="col-sm-4" key={index}  onClick={() => this.handlevideo(index)}>
                                         <div className="video-primary thumnail-image">
-                                           <img src={require('../../assets/images/' + videokey.thumnail)}/>
+                                           <img src={require('../../assets/images/' + videokey.thumnail)} alt=""/>
                                         </div>
                                     </div>
                                     )

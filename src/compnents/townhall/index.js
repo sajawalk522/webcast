@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 import Sidebar from '../../compnents/townhall/sidebar';
-// import webcastContent from '../../compnents/townhall/webcast';
+import Videos from '../../compnents/vedios/index';
 import Header from '../../compnents/commoncomponent/header';
 import audio from '../../compnents/audio';
 import Dashboard from '../dashboard';
@@ -38,7 +38,7 @@ class townHall extends Component{
                                     <img src={require("../../assets/images/search.svg")} alt=""/>
                                      <input type="text" />
                                 </div>
-                              {/* <Route exact path="/" component={webcastContent} /> */}
+                              <Route exact path="/videos" component={Videos} />
                               <Route exact path="/dashboard" component={Dashboard} />
                               <Route path="/schedule" component={audio} /> 
                               <Route path="/webcastdetail" component={Webcast} />
