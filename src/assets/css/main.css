@@ -29,6 +29,22 @@
     content: "\e900";
     color: #fff;
   }
+  .icon-manage-webcast:before {
+    content: "\e902";
+    color: #fff;
+  }
+  .icon-schedule-webcast:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .icon-video:before {
+    content: "\e904";
+    color: #fff;
+  }
+  .icon-dashboard:before {
+    content: "\e900";
+    color: #fff;
+  }
   
 
 .sidebar{
