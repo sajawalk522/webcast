@@ -35,7 +35,7 @@ class sideBar extends Component{
                                <li><NavLink activeClassName="active" to={'/vedios'}><span className="icon-manage-webcast"></span> <span>Manage Webcast</span></NavLink></li>
                                <li><NavLink activeClassName="active" to={'/videos'}><span className="icon-video"></span> <span>Media Library</span></NavLink></li>
                               
-                               <li><NavLink activeClassName="active" to={'/moderat'}><span className="icon-video"></span> <span>Moderate</span></NavLink></li>
+                               {/* <li><NavLink activeClassName="active" to={'/moderat'}><span className="icon-video"></span> <span>Moderate</span></NavLink></li> */}
                            </ul>
                           
                        </div>
