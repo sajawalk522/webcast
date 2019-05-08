@@ -1,5 +1,7 @@
 import React , {Component} from 'react';
-import Music from '../audio';
+ 
+// import { NavLink } from "react-router-dom";
+import Media from '../media';
  
 class videoContent extends Component{
     state = {
@@ -33,31 +35,38 @@ class videoContent extends Component{
         videolist: true,
         videodetail: false,
         getvideo: null,
-
+        nextimg: null,
         
     }
-    handlevideo(ev){
+    handlevideo(ev, img){
         this.setState({
             videolist: false,
             videodetail: true,
             getvideo:ev,
-
+            nextimg: img,
         })
     }
     render(){
         return(
             <div>
+                 {/* <NavLink to={'/videos'}>
+                      <div className="back-btn">
+                          <div className="back-button">
+                           <img src={require('../../assets/images/arrow-left.svg')} alt=""/>
+                          </div>
+                      </div>
+                 </NavLink> */}
                <div className="video-content">
                     <div className="vedio-header">
                         <h1>Administration</h1>
-                        <h2>Media Library</h2>
+                        <h2>{this.state.videodetail ? 'Video Title' : 'Media Library'}</h2>
                     </div>
                         <div className="video-thumnails">
                         
                                 <div className="row">
                                 { this.state.videolist &&
                                     this.state.video.map((videokey , index) => 
-                                    <div className="col-sm-4" key={index}  onClick={() => this.handlevideo(index)}>
+                                    <div className="col-sm-4" key={index}  onClick={() => this.handlevideo(index ,videokey)}>
                                         <div className="video-primary thumnail-image">
                                            <img src={require('../../assets/images/' + videokey.thumnail)} alt=""/>
                                         </div>
@@ -65,14 +74,9 @@ class videoContent extends Component{
                                     )
                                 }
 
-                                { this.state.videodetail &&
-                                    <div className="col-sm-12" >
-                                        <div className="video-primary w-container">
-                                            <iframe width="100%" height="300px" src={this.state.video[this.state.getvideo].videoUrl} ></iframe>
-                                        </div>
-                                        <div className="flex-adio">
-                                            <Music/>
-                                        </div>
+                                {  this.state.videodetail &&
+                                    <div>
+                                        <Media thumnail={this.state.nextimg}/>
                                     </div>
                                 }
                                </div>                     

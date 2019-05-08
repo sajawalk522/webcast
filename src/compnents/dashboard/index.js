@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 // import Header from "../commoncomponent/header";
+// import { NavLink } from "react-router-dom";
 class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard">
-         
+             {/* <NavLink to={'/dashboard'}>
+                      <div className="back-btn">
+                          <div className="back-button">
+                           <img src={require('../../assets/images/arrow-left.svg')} alt=""/>
+                          </div>
+                      </div>
+                 </NavLink> */}
           <div className="video-content">
                     <div className="vedio-header">
                         <h1>Administration</h1>

@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
 // import Music from '../../audio';
+// import { NavLink } from "react-router-dom";
  
 class videoContent extends Component{
    state = {
@@ -41,8 +42,16 @@ class videoContent extends Component{
     render(){
         return(
             <div>
+                 {/* <NavLink to={'/webcastdetail'}>
+                      <div className="back-btn">
+                          <div className="back-button">
+                           <img src={require('../../../assets/images/arrow-left.svg')} alt=""/>
+                          </div>
+                      </div>
+                 </NavLink> */}
                
                <div className="video-content">
+              
                    <div className="vedio-header">
                         <h1>Administration</h1>
                         <h2>{this.state.webcastdata ? "Webcast Details" : "Media Library" }</h2>

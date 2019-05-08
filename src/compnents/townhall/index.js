@@ -6,7 +6,10 @@ import audio from '../../compnents/audio';
 import Dashboard from '../dashboard';
 import Webcast from '../../compnents/townhall/webcast';
 import { Route } from "react-router-dom";
-
+import Media from "../media";
+import Moderat from "../moderator";
+import Outstanding from "../outstanding";
+// import { NavLink } from "react-router-dom";
 class townHall extends Component{
   state={
       show: false
@@ -19,6 +22,7 @@ class townHall extends Component{
     render(){
         return(
             <div className="main-container">
+            
                 <div className="container-fluid ">
                     <div className="row sidearea">
                     
@@ -28,11 +32,20 @@ class townHall extends Component{
                         </div>
                         
                         <div className="col-9 ">
+                       
                               <div className="header-secction">
                                 <div className="bars-container" onClick={() => this.open()}>
                                     <i className="fa fa-bars"></i>
                                 </div>
+                               
                               <Header/>
+                              {/* <NavLink to={'/'}>
+                      <div className="back-btn">
+                          <div className="back-button">
+                           <img src={require('../../assets/images/arrow-left.svg')} alt=""/>
+                          </div>
+                      </div>
+                 </NavLink> */}
                               </div>
                               <div className="search-container search-mob">
                                     <img src={require("../../assets/images/search.svg")} alt=""/>
@@ -42,6 +55,9 @@ class townHall extends Component{
                               <Route exact path="/dashboard" component={Dashboard} />
                               <Route path="/schedule" component={audio} /> 
                               <Route path="/webcastdetail" component={Webcast} />
+                              {/* <Route path="/media" component={Media} /> */}
+                              <Route path="/moderat" component={Moderat} />
+                              <Route path="/outstanding" component={Outstanding} />
                              
                         </div>
                     </div>

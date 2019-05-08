@@ -119,6 +119,11 @@
 .list-option{
     padding:60px 0;
 }
+/* .back-btn{
+    width: 85px;
+    margin-top: -77px;
+    margin-left: -49px;
+} */
 .back-btn .back-button{
     width: 68px;
     height: 68px;
@@ -160,6 +165,7 @@
 .video-thumnails .video-primary{
     margin:10px 0;
     cursor: pointer;
+    overflow: hidden;
 }
 .thumnail-image img{
     width:100%;
@@ -274,7 +280,7 @@
     min-width: 211px;
 }
 .list-below ul li:nth-child(1){
-    background-color:#d8d5d5;
+    background-color:#f7f7f7;
     border: none;
 }
 .list-below ul li:nth-child(1) span{
@@ -300,4 +306,89 @@
 .ex-vedio{
     padding-left:0;
     margin:30px 0;
+}
+.nav-list ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+.nav-list ul li{
+    margin-right: 50px;
+    color: #b0c512;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+.nav-list ul li a{
+    margin-right: 50px;
+    color: #b0c512;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.nav-list ul li:hover{
+    border-bottom: 5px solid #b0c512;
+}
+.nav-list ul li.active{
+    border-bottom: 5px solid #b0c512;
+}
+.blank-area{
+    width: 100%;
+    height: 200px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-area{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    width: 15px;
+    height: 200px;
+    background-color: #98CE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line i{
+    color: #fff;
+}
+.ver-line{
+    width: 100%;
+    height: 15px;
+    background-color: #f7f7f7;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-sm-5{
+    padding: 0px;
+}
+.circle-div{
+    width: 30px;
+    height: 30px;
+    background-color: #98CE00;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-div i{
+    color: #fff;
+}
+.media-input-container{
+    margin-top: 50px;
+}
+.media-input-container input{
+    border: 1px solid #afafaf;
+    border-radius: 50px;
+    padding: 4px 10px;
+    min-width: 100%;
+}
+.gray{
+    color: gray;
 }
