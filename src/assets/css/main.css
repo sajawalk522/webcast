@@ -433,10 +433,10 @@
     border-radius: 50%;
     background: #98CE00;
     cursor: pointer;
-    background-image: url(../images/dots.png);
+    background-image: url(../images/code.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50% 50%;
+    /* background-size: 50% 50%; */
   }
   .slider2::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -446,10 +446,10 @@
     border-radius: 0;
     background: #98CE00;
     cursor: pointer;
-    background-image: url(../images/code.png);
+    background-image: url(../images/dots.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50% 50%;
+    /* background-size: 50% 50%; */
   }
   .slider2{
     background: transparent;
