@@ -433,7 +433,7 @@
     border-radius: 50%;
     background: #98CE00;
     cursor: pointer;
-    background-image: url(../images/arrow-left.svg);
+    background-image: url(../images/dots.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
@@ -446,7 +446,7 @@
     border-radius: 0;
     background: #98CE00;
     cursor: pointer;
-    background-image: url(../images/arrow-left.svg);
+    background-image: url(../images/code.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
