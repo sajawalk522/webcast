@@ -139,6 +139,19 @@
             animation-name: example;
             animation-duration: 0.20s;
            }
+           .slidecontainer{
+             display: none;
+           }
+           .row-flex{
+             flex-direction: column;
+           }
+           .video-thumnails .video-primary{
+             width: 250px;
+           }
+           .blank-area{
+             width: 250px;
+             margin-top: 40px;
+           }
            /* Standard syntax */
            @keyframes example {
             from {
@@ -260,6 +273,19 @@
             animation-name: example;
             animation-duration: 0.20s;
            }
+           .slidecontainer{
+            display: none;
+          }
+          .row-flex{
+            flex-direction: column;
+          }
+          .video-thumnails .video-primary{
+            /* width: 250px; */
+          }
+          .blank-area{
+            width: 250px;
+            margin-top: 40px;
+          }
            /* Standard syntax */
            @keyframes example {
             from {
@@ -447,6 +473,19 @@
         display: flex;
         justify-content: center;
       }
+      .slidecontainer{
+        display: none;
+      }
+      .row-flex{
+        flex-direction: column;
+      }
+      .video-thumnails .video-primary{
+        width: 250px;
+      }
+      .blank-area{
+        width: 250px;
+        margin-top: 40px;
+      }
       }
       @media (max-width: 684px) and (min-width: 568px) {
         .main-container{
@@ -555,6 +594,19 @@
         display: flex;
         justify-content: center;
       }
+      .slidecontainer{
+        display: none;
+      }
+      .row-flex{
+        flex-direction: column;
+      }
+      .video-thumnails .video-primary{
+        width: 250px;
+      }
+      .blank-area{
+        width: 250px;
+        margin-top: 40px;
+      }
       }
       @media (max-width: 767px) and (min-width: 685px)  {
         .main-container{
@@ -571,6 +623,19 @@
             animation-name: example;
             animation-duration: 0.20s;
            }
+           .slidecontainer{
+            display: none;
+          }
+          .row-flex{
+            flex-direction: column;
+          }
+          .video-thumnails .video-primary{
+            width: 250px;
+          }
+          .blank-area{
+            width: 250px;
+            margin-top: 40px;
+          }
            /* Standard syntax */
            @keyframes example {
             from {
